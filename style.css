@@ -119,6 +119,7 @@ header img:hover {
   border-radius: 20px;
   padding: 1rem;
   gap: 1.3rem;
+  display: none;
 }
 
 .item-wrapper.ip {
@@ -129,5 +130,18 @@ header img:hover {
 }
 
 .item-wrapper {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.country-flag p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#flag {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
