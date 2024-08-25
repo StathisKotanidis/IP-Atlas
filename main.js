@@ -1,4 +1,17 @@
 const searchBtn = document.querySelector("#search-button");
+const ipGrid = document.querySelector(".ip-grid");
+const ip = document.querySelector("#ip");
+const country = document.querySelector("#country");
+const flag = document.querySelector("#flag");
+const city = document.querySelector("#city");
+const org = document.querySelector("#org");
+const isp = document.querySelector("#isp");
+const callingCode = document.querySelector("#calling-code");
+const zipcode = document.querySelector("#zipcode");
+const currency = document.querySelector("#currency");
+const symbol = document.querySelector("#symbol");
+const time = document.querySelector("#time");
+const offset = document.querySelector("#offset");
 
 searchBtn.addEventListener("click", getIpData);
 
@@ -15,32 +28,32 @@ function getIpData() {
     })
     .then((data) => {
       console.log(data);
-      const ipGrid = document.querySelector(".ip-grid");
-      //   ipGrid.innerHTML = "";
+
       ipGrid.style.display = "grid";
-      const ip = document.querySelector("#ip");
+
+      // Initialize the map and set its view to a default location and zoom level
+      let map = L.map("map").setView([data.latitude, data.longtitude], 13);
+
+      // Add OpenStreetMap tiles
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "© OpenStreetMap contributors",
+      }).addTo(map);
+
+      // Add a marker to the map
+      let marker = L.marker([data.latitude, data.longtitude]).addTo(map);
+
       ip.innerHTML = searchInput;
-      const country = document.querySelector("#country");
       country.innerHTML = data.country_name;
-      const flag = document.querySelector("#flag");
       flag.src = data.country_flag;
-      const city = document.querySelector("#city");
       city.innerHTML = data.city;
-      const org = document.querySelector("#org");
       org.innerHTML = data.organization;
-      const isp = document.querySelector("#isp");
       isp.innerHTML = data.isp;
-      const callingCode = document.querySelector("#calling-code");
       callingCode.innerHTML = data.calling_code;
-      const zipcode = document.querySelector("#zipcode");
       zipcode.innerHTML = data.zipcode;
-      const currency = document.querySelector("#currency");
       currency.innerHTML = data.currency.code;
-      const symbol = document.querySelector("#symbol");
       symbol.innerHTML = data.currency.symbol;
-      const time = document.querySelector("#time");
       time.innerHTML = data.time_zone.current_time;
-      const offset = document.querySelector("#offset");
       offset.innerHTML = data.time_zone.offset;
     })
     .catch((error) => {
