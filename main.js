@@ -13,6 +13,9 @@ const symbol = document.querySelector("#symbol");
 const time = document.querySelector("#time");
 const offset = document.querySelector("#offset");
 
+let map;
+let marker;
+
 searchBtn.addEventListener("click", getIpData);
 
 function getIpData() {
@@ -31,17 +34,18 @@ function getIpData() {
 
       ipGrid.style.display = "grid";
 
-      // Initialize the map and set its view to a default location and zoom level
-      let map = L.map("map").setView([data.latitude, data.longtitude], 13);
+      if (map) {
+        map.remove();
+      }
 
-      // Add OpenStreetMap tiles
+      map = L.map("map").setView([data.latitude, data.longitude], 13);
+
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
-        attribution: "© OpenStreetMap contributors",
+        attribution: "&copy; OpenStreetMap contributors",
       }).addTo(map);
 
-      // Add a marker to the map
-      let marker = L.marker([data.latitude, data.longtitude]).addTo(map);
+      marker = L.marker([data.latitude, data.longitude]).addTo(map);
 
       ip.innerHTML = searchInput;
       country.innerHTML = data.country_name;
