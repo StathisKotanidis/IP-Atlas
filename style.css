@@ -25,7 +25,6 @@ button:hover {
 /* Header styling */
 
 header {
-  width: 100%;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -39,7 +38,6 @@ header input {
   padding: 1rem;
   border-radius: 20px;
   border: 1px solid #dee2e6;
-  font-size: 1.3rem;
 }
 
 header input::placeholder {
@@ -115,6 +113,7 @@ header img:hover {
 #map {
   height: 400px;
   width: 800px;
+  border-radius: 20px;
 }
 
 .ip-grid {
