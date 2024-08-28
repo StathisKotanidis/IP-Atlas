@@ -17,6 +17,6 @@ IP Atlas is a web application that allows users to input an IP address and retri
 -IP Geolocation API: Provides detailed information about the IP address entered by the user.
 
 ## Setup and Usage
-1. Clone the repository: ```bash
-git clone https://github.com/yourusername/ip-atlas.git
-cd ip-atlas ```
+1. Clone the repository: `bash
+git clone https://github.com/yourusername/ip-atlas.git`
+`cd ip-atlas `
