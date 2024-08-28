@@ -6,38 +6,70 @@
   }
 
   header input {
-    width: 50%;
+    width: 70%;
     padding: 0.8rem;
   }
 
   header input::placeholder {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   header button {
-    width: 90px;
+    width: 80px;
   }
 
   header button i {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   header img {
-    width: 100px;
+    width: 70px;
   }
 
   /* slogan section styling */
 
   .slogan-section {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 
   .text {
     animation: typing 4s steps(57), cursor 0.6s step-end infinite alternate;
   }
+
+  /* Info section styling */
+
+  .info-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leaflet-map {
+    width: 100%;
+  }
+
+  #map {
+    height: 300px;
+    width: 90%;
+  }
+
+  .ip-grid {
+    width: 90%;
+    height: 500px;
+    padding: 1rem;
+    gap: 1.3rem;
+  }
+
+  .item-wrapper.ip {
+    font-size: 1.5rem;
+  }
+
+  .item-wrapper {
+    font-size: 0.7rem;
+  }
 }
 
-@media (max-width: 600px) {
+@media (min-width:451px) and (max-width: 600px) {
   /* Header styling */
 
   header {
