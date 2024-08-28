@@ -22,7 +22,7 @@ IP Atlas is a web application that allows users to input an IP address and retri
    git clone https://github.com/yourusername/ip-atlas.git
    cd ip-atlas
 ```
-2.Open the index.html file in your preferred web browser.
+  2.Open the index.html file in your preferred web browser.
 
 ## Usage
 1.Enter an IP address into the search bar.
