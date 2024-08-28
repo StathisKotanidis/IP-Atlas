@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 450px) {
+@media (max-width: 450px) {
   /* Header styling */
 
   header {
@@ -23,7 +23,7 @@
   }
 
   header img {
-    width: 70px;
+    width: 80px;
   }
 
   /* slogan section styling */
@@ -69,7 +69,7 @@
   }
 }
 
-@media (min-width:451px) and (max-width: 600px) {
+@media (min-width: 451px) and (max-width: 700px) {
   /* Header styling */
 
   header {
@@ -77,16 +77,84 @@
   }
 
   header input {
-    width: 50%;
-    padding: 0.8rem;
+    width: 60%;
   }
 
   header input::placeholder {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   header button {
-    width: 90px;
+    width: 80px;
+  }
+
+  header button i {
+    font-size: 1.5rem;
+  }
+
+  header img {
+    width: 80px;
+  }
+
+  /* slogan section styling */
+
+  .slogan-section {
+    font-size: 0.9rem;
+  }
+
+  .text {
+    animation: typing 3.5s steps(57), cursor 0.6s step-end infinite alternate;
+  }
+
+  /* Info section styling */
+
+  .info-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leaflet-map {
+    width: 100%;
+  }
+
+  #map {
+    height: 300px;
+    width: 80%;
+  }
+
+  .ip-grid {
+    width: 80%;
+    height: 500px;
+    padding: 1rem;
+    gap: 1.3rem;
+  }
+
+  .item-wrapper.ip {
+    font-size: 1.5rem;
+  }
+
+  .item-wrapper {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  /* Header styling */
+  header {
+    justify-content: space-around;
+  }
+
+  header input {
+    width: 40%;
+  }
+
+  header input::placeholder {
+    font-size: 1rem;
+  }
+
+  header button {
+    width: 120px;
   }
 
   header button i {
@@ -94,13 +162,13 @@
   }
 
   header img {
-    width: 100px;
+    width: 120px;
   }
 
   /* slogan section styling */
 
   .slogan-section {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .text {
@@ -121,18 +189,70 @@
 
   #map {
     height: 300px;
-    width: 90%;
+    width: 80%;
   }
 
   .ip-grid {
-    width: 90%;
+    width: 80%;
     height: 500px;
     padding: 1rem;
     gap: 1.3rem;
   }
 
   .item-wrapper.ip {
+    font-size: 1.5rem;
+  }
+
+  .item-wrapper {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+  /* Header styling */
+  header {
+    justify-content: center;
+  }
+
+  header input {
+    width: 40%;
+  }
+
+  header input::placeholder {
+    font-size: 1rem;
+  }
+
+  header button {
+    width: 120px;
+  }
+
+  header button i {
     font-size: 2rem;
+  }
+
+  header img {
+    width: 120px;
+  }
+  /* Info section styling */
+
+  .leaflet-map {
+    width: 100%;
+  }
+
+  #map {
+    height: 500px;
+    width: 80%;
+  }
+
+  .ip-grid {
+    width: 80%;
+    height: 500px;
+    padding: 1rem;
+    gap: 1.3rem;
+  }
+
+  .item-wrapper.ip {
+    font-size: 1.5rem;
   }
 
   .item-wrapper {

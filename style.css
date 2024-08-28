@@ -107,12 +107,12 @@ header img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 50%;
 }
 
 #map {
-  height: 400px;
-  width: 800px;
+  height: 600px;
+  width: 80%;
   border-radius: 20px;
 }
 
@@ -120,7 +120,7 @@ header img:hover {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   background: linear-gradient(to bottom, rgb(5, 5, 68), skyblue);
-  width: 30%;
+  width: 50%;
   height: 600px;
   border-radius: 20px;
   padding: 1rem;
