@@ -29,6 +29,8 @@ IP Atlas is a web application that allows users to input an IP address and retri
 2. Click the search button to retrieve information about the IP.
 3. The map will update to show the location of the IP address, and the details will be displayed on the right-hand side.
 
+## Live-Demo
+https://stathiskotanidis.github.io/IP-Atlas/
 
 
 
