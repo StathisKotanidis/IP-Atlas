@@ -20,5 +20,9 @@ IP Atlas is a web application that allows users to input an IP address and retri
 1. Clone the repository:
   ```bash
    git clone https://github.com/yourusername/ip-atlas.git
-   cd ip-atlas
+   cd ip-atlas 
+2.Open the index.html file in your preferred web browser.
+
+
+
 
