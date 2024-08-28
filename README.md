@@ -9,12 +9,12 @@ IP Atlas is a web application that allows users to input an IP address and retri
 - Simple and user-friendly interface.
 
 ## Tech Stack
--HTML: For structuring the content of the web app.
--CSS: For styling the web app to enhance user experience.
--JavaScript: To handle the logic for fetching IP information and dynamically updating the UI.
--Leaflet.js: A JavaScript library for interactive maps to display the geographical location of IP addresses.
--Fetch API: For making HTTP requests to the IP Geolocation API.
--IP Geolocation API: Provides detailed information about the IP address entered by the user.
+- HTML: For structuring the content of the web app.
+- CSS: For styling the web app to enhance user experience.
+- JavaScript: To handle the logic for fetching IP information and dynamically updating the UI.
+- Leaflet.js: A JavaScript library for interactive maps to display the geographical location of IP addresses.
+- Fetch API: For making HTTP requests to the IP Geolocation API.
+- IP Geolocation API: Provides detailed information about the IP address entered by the user.
 
 ## Setup and Usage
 1. Clone the repository:
