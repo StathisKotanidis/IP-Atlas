@@ -18,3 +18,6 @@ Looking ahead, there are a few  optimizations planned to improve the performance
 
 ## Lessons Learned:
 Building this project made me realize how powerful APIs are in programming, allowing me to retrieve so many different data and be able to make an application from scratch using them alongside other powerful libraries as Leaflet.
+
+## More Projects
+Nasa APOD: https://stathiskotanidis.github.io/Nasa-APOD/
