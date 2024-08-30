@@ -2,6 +2,8 @@
 
 IP Atlas is a web application that allows users to input an IP address and retrieve various information about it, such as the country it belongs to, the currency of that country, country's flag, current time, ISP, offset, a map and more. 
 
+** THE FOLLOWING IP ADDRESS IS FROM A VPN, NOT MY PERSONAL IP OR ANOTHER USER'S.**
+
 ![ipatlas](https://github.com/user-attachments/assets/64a9b6c6-e33b-4484-8513-4028f5a577af)
 
 Link to Project: https://stathiskotanidis.github.io/IP-Atlas/
